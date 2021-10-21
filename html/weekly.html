@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content = "IE-Edge">
+        <meta name = "viewport" content  = "width=device-width, initial-scale = 1.0"> 
+        <title>Weekly Planner Page</title>
+
+        <link rel="stylesheet" href="../css/weekly_style.css">
+        <script src="https://kit.fontawesome.com/a9c3ea6bcb.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Create navbar in header-->
+        <header>
+            <div class = "nav_container">
+                <!--Create and insert a Logo to Replace Title?-->
+                <nav>
+                    <label class = "logo">Task Tracker</label>
+                    <ul>
+                        <li><a href = "../index.html">Home</a></li>
+                        <li><a href = "./monthly.html">Monthly</a></li>
+                        <li><a class = "active" href = "./weekly.html">Weekly</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <h1 class = "week_title">October 24-31</h1>
+
+        <h2>Weekly Tasks</h2>
+
+        <section class = "tasks_container">
+            <div class = "task_card">
+                <div class = "task">
+                    <h3>Task 1</h3>
+
+                    <!-- Progress Bar -->
+                    <div class = "progress_bar">
+                        <progress id = "progress" value = "33" max = "100">33%</progress>
+                    </div>
+
+                    <!-- Checklist -->
+                    <div class = "task_list">
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_1" aria-label="step_1" checked>
+                            <label>Step 1</label>
+                        </div>
+
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_2" aria-label="step_2">
+                            <label>Step 2</label>
+                        </div>
+
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_3" aria-label="step_3">
+                            <label>Step 3</label>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Add new checklist item -->
+                    <div class = new_item>
+                        <input type = "text" placeholder = "Add Step" aria-label="new_step">
+                        <button><i class="new_btn" aria-label = "add new step">+</i></button>
+                    </div>
+                </div>
+
+                <div class = "task">
+                    <h3>ART 1004</h3>
+                    <h4>Due Oct 29</h4>
+
+                    <!-- Progress Bar -->
+                    <div class = "progress_bar">
+                        <progress id = "progress" value = "50" max = "100">50%</progress>
+                    </div>
+
+                    <!-- Checklist -->
+                    <div class = "task_list">
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_1" aria-label="step_1" checked>
+                            <label>Thumbnails</label>
+                        </div>
+
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_2" aria-label="step_2">
+                            <label>Sketch</label>
+                        </div>
+
+                    </div>
+                    
+
+                    <!-- Add new checklist item -->
+                    <div class = new_item>
+                        <input type = "text" placeholder = "Add Step" aria-label="new_step">
+                        <button><i class="new_btn" aria-label = "add new step">+</i></button>
+                    </div>
+                </div>
+
+                <div class = "task">
+                    <h3>APM 1663 Problem Set 1</h3>
+                    <h4>Due Nov 1</h4>
+
+                    <!-- Progress Bar -->
+                    <div class = "progress_bar">
+                        <progress id = "progress" value = "0" max = "100">0%</progress>
+                    </div>
+
+                    <!-- Checklist -->
+                    <div class = "task_list">
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_1" aria-label="step_1">
+                            <label>Problems 1-2</label>
+                        </div>
+
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_2" aria-label="step_2">
+                            <label>Problems 3-4</label>
+                        </div>
+
+                        <div class = "new_step">
+                            <input type = "checkbox" id = "step_3" aria-label="step_3">
+                            <label>Problems 5-6</label>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Add new checklist item -->
+                    <div class = new_item>
+                        <input type = "text" placeholder = "Add Step" aria-label="new_step">
+                        <button><i class="new_btn" aria-label = "add new step">+</i></button>
+                    </div>
+                </div>
+
+                
+
+                <!-- Create New Task -->
+                <div class = "create_new">
+                    <h3>Create New Task</h3>
+                    <input type = "text" placeholder = "Create New Task" aria-label="new_step">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Daily Section -->
+        <section class = "daily_container">
+            <div class = "day">
+                <h3>Monday</h3>
+                <hr>
+
+                <!-- Daily Tasks Checklist -->
+                <div class = "daily_checklist">
+                    <div class = "daily_task">
+                        <input type = "checkbox" id = "step_1" aria-label="step_1" checked>
+                        <label>APM 1663 1:20-2:27pm</label>
+                    </div>
+
+                    <div class = "daily_task">
+                        <input type = "checkbox" id = "step_2" aria-label="step_2">
+                        <label>ART 1004 4:00pm - 7:20pm</label>
+                    </div>
+                </div>
+
+                <!-- Add a New Task -->
+                <div class = "new_daily">
+                    <input type = "text" placeholder = "Add a Task" aria-label="add_daily_task">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+            <div class = "day">
+                <h3>Tuesday</h3>
+                <hr>
+
+                <!-- Daily Tasks Checklist -->
+                <div class = "daily_checklist">
+                    <div class = "daily_task">
+                        <input type = "checkbox" id = "step_1" aria-label="step_1">
+                        <label>CSI 2520 1:00pm-2:27pm</label>
+                    </div>
+
+                    <div class = "daily_task">
+                        <input type = "checkbox" id = "step_2" aria-label="step_2">
+                        <label>APM 1663 4.2 HW Problems</label>
+                    </div>
+                </div>
+
+
+                <div class = "new_daily">
+                    <input type = "text" placeholder = "Add a Task" aria-label="add_daily_task">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+            <div class = "day">
+                <h3>Wednesday</h3>
+                <hr>
+                <div class = "new_daily">
+                    <input type = "text" placeholder = "Add a Task" aria-label="add_daily_task">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+            <div class = "day">
+                <h3>Thursday</h3>
+                <hr>
+                <div class = "new_daily">
+                    <input type = "text" placeholder = "Add a Task" aria-label="add_daily_task">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+            <div class = "day">
+                <h3>Friday</h3>
+                <hr>
+                <div class = "new_daily">
+                    <input type = "text" placeholder = "Add a Task" aria-label="add_daily_task">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+            <div class = "day">
+                <h3>Saturday</h3>
+                <hr>
+                <div class = "new_daily">
+                    <input type = "text" placeholder = "Add a Task" aria-label="add_daily_task">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+            <div class = "day">
+                <h3>Sunday</h3>
+                <hr>
+                <div class = "new_daily">
+                    <input type = "text" placeholder = "Add a Task" aria-label="add_daily_task">
+                    <button><i class="new_task_btn" aria-label = "add new task">+</i></button>
+                </div>
+            </div>
+
+        </section>
+
+    </body>
+
+</html>
